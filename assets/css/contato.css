@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kaisei-harunoumi-medium {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kaisei-harunoumi-bold {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+:root{
+    --fonte-p: 'Kaisei HarunoUmi', serif;
+}
+.fonte{
+    font-family: var(--fonte-p);
+}
+h1{
+    font-size: 35px;
+}
+.cabecalho{
+    padding: 30px;
+    background-color: black;
+}
+.telefone{
+    font-size: 15px;
+}
+h2{
+    font-size: 30px;
+}
+.localizacao{
+    font-size: 15px;
+}
+.formulario{
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    margin-right:80px;
+
+}
+.bet{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    padding: 50px;
+}
+.dados{
+    padding: 10px;
+}
