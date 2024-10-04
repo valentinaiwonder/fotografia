@@ -115,65 +115,85 @@
             </section>
 
         <!-- Comentários dos usuários -->
-         <h2>Avaliações sobre o meu trabalho</h2>
+        <h2>Avaliações sobre o meu trabalho</h2>
         <div class="comentarios">
 
-            <div class="card">
+            <div id="comentario1" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Ana Paula</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="nome">Ana Paula</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">A experiência que tive com esse fotógrafo foi simplesmente incrível. Eu precisava de fotos profissionais para o meu portfólio, e o resultado superou todas as expectativas!</p>
+                <button class="responder">Responder</button>
             </div>
-
-            <div class="card">
+        
+            <div id="comentario2" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Carlos Eduardo</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="nome">Carlos Eduardo</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">As fotos do meu casamento ficaram emocionantes! O fotógrafo conseguiu capturar todos os momentos importantes de forma natural. Recomendo!</p>
+                <button class="responder">Responder</button>
             </div>
-
-            <div class="card">
+        
+            <div id="comentario3" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Juliana Mota</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="nome">Juliana Mota</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">Tive uma excelente experiência com o fotógrafo durante o aniversário da minha filha. As fotos ficaram lindas e espontâneas!</p>
+                <button class="responder">Responder</button>
             </div>
-
-            <div class="card">
+        
+            <div id="comentario4" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Renato Alves</p>
-                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p class="nome">Renato Alves</p>
+                    <div class="estrelas">⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">O trabalho realizado para a minha campanha publicitária foi impecável. A edição e criatividade do fotógrafo elevaram a qualidade do projeto.</p>
+                <button class="responder">Responder</button>
             </div>
-
-            <div class="card">
+        
+            <div id="comentario5" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Maria Clara</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="nome">Maria Clara</p>
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">As fotos do meu ensaio de gestante ficaram maravilhosas! O fotógrafo foi extremamente atencioso e o resultado foi emocionante.</p>
+                <button class="responder">Responder</button>
             </div>
-
-            <div class="card">
+        
+            <div id="comentario6" class="card">
                 <div class="user-info">
                     <span class="usuario-icone">👤</span>
-                    <p class="name">Marcos Alberto</p>
-                    <div class="stars">⭐⭐⭐</div>
+                    <p class="nome">Marcos Alberto</p>
+                    <div class="estrelas">⭐⭐⭐</div>
                 </div>
-                <p class="txt_avaliacao"><Em>Eu gostei do serviço prestado e as fotos ficaram boas, porém achei o preço muito elevado para a quantidade de fotos por sessão</Em>.</p>
+                <p class="txt_avaliacao"><em>Eu gostei do serviço prestado e as fotos ficaram boas, porém achei o preço muito elevado para a quantidade de fotos por sessão</em>.</p>
+                <button class="responder">Responder</button>
             </div>
+        
         </div>
+        
+        <script>
+            document.querySelectorAll('.responder').forEach(function(botao) {
+                botao.addEventListener('click', function() {
+                    var card = this.parentElement // Seleciona o elemento pai do botão (a div .card)
+                    var caixa_texto = document.createElement('input')
+                    caixa_texto.type = 'text'
+                    caixa_texto.placeholder = 'Digite a resposta'
+
+                    card.appendChild(caixa_texto) // Adiciona o input no final do comentário
+                })
+            })
+        </script>
 
       </main>
     
-</body>
+    </body>
 </html>
