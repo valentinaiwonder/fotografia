@@ -271,3 +271,24 @@ b{
     font-weight: 10000;
     margin-left: 20px;
 }
+h3{
+    font-size: x-large;
+    margin: 40px;
+    background-color: var(--cor-texto-preto);
+    color: var(--cor-texto-branco);
+    padding: 20px;
+    text-align: center;
+}
+
+#msg {
+    margin-top: 20px;
+}
+
+.mensagem {
+    transition: opacity 1s ease; 
+    opacity: 1; 
+}
+
+.esconder {
+    opacity: 0;
+}

@@ -8,6 +8,7 @@
     --cor-hover: #ccc;
     --altura-linha: 2px;
     --cor-h1-hover: rgba(255, 255, 255, 0.738); 
+    --cor-h1-hover2: rgba(47, 47, 47, 0.738); 
 }
 
 * {
@@ -34,18 +35,19 @@
     font-style: normal;
 }
 
-body {
+.banner {
     height: 100vh;
     background-image: url(/assets/img/p&b19.png);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+
+/* HEADER */
 .header1 {
     background-color: var(--cor-fundo-branco);
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 1;
     padding: 20px 0;
@@ -113,7 +115,7 @@ body {
 
 .header2 {
     background-color: var(--cor-fundo-transparente);
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 1;
     padding: 20px 0;
@@ -178,3 +180,115 @@ body {
 .header2 .menu ul li a:hover::before {
     transform: scaleX(1);
 }
+/* FIM DO HEADER */
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/img/lobao.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+    
+
+.styled-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    outline: none;
+    font-family: "Kaisei HarunoUmi", serif;
+    text-decoration: none;
+}
+
+.styled-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.espaco-branco{
+    padding: 3em
+}
+
+.section3{
+    height: 70vh;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.frase{
+    font-family: "Kaisei HarunoUmi", serif;
+    color:var(--cor-texto-preto);
+    padding-bottom: 3em;
+}
+
+.img1 {
+    display: inline-block; 
+    padding: 0px; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img1:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px; 
+}
+
+.img1 img {
+    width: 84vh; 
+    height: auto;
+}
+
+.section4 {
+    background-color: #000;
+    padding: 40px;
+}
+
+.section4 .content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img1 img {
+    width: 400px;
+    height: auto;
+}
+
+.text-container {
+    max-width: 400px;
+}
+
+.text {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+
+/* FIM DO FOOTER */
+

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header2">
+    <header class="header2" id="header">
         <div class="wrapper">
             <div class="logo">
                 <a href="" class="nuances kaisei-harunoumi-bold">NUANCES</a>
@@ -25,5 +25,86 @@
             </nav>
         </div>
     </header>
+
+    <!-- Banner -->
+   <div class="banner"></div>
+
+   <!-- Espaço Branco -->
+    <div class="espaco-branco"></div>
+
+   <!-- Etapa 2 -->
+   <section class="section2">
+        <a href="galeria.html" class="styled-button">
+            GALERIA
+        </a>
+    </section>
+
+
+    <!-- Espaço Branco -->
+    <div class="espaco-branco"></div>
+
+    <!-- Etapa 3 -->
+    <section class="section3">
+        <div class="container">
+            <div class="frase">
+                <h2>“NEM TUDO PRECISA SER CROMÁTICO, AS VEZES PRECISAMOS DE NUANCES.”</h2>
+            </div>
+        </div>
+
+        <div>
+            <div class="img2">
+                <div class="img1">
+                    <img class="img1" src="assets/img/pessoa.jpg" alt="">
+                </div>
+
+                <div class="img1">
+                    <img class="img1" src="assets/img/pessoa.jpg" alt="">
+                </div>
+            </div>     
+        </div>
+    </section>
+        
+
+    <!-- Etapa 4 -->
+    <section class="section4">
+        <div class="content">
+            <div class="img1">
+                <img src="assets/img/image.png" alt="">
+            </div>
+    
+            <div class="text-container">
+                <p class="text">
+                    “A câmera é a ferramenta que mais pinta minha vida, mesmo que às vezes ela não tenha cor.”
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Espaço Branco -->
+     <div class="espaco-branco"></div>
+
+
+    <script>
+        window.addEventListener("scroll", function(event) {
+            var header = document.querySelector("#header")
+            var top = this.scrollY;
+            
+            if (top >= 527) {
+                header.className = "header1"
+            } else {
+                header.className = "header2"
+            }
+
+            console.log(top)
+            
+        }, false);
+
+    </script>
+
+
+
+    <footer>
+
+    </footer>
 </body>
 </html>
