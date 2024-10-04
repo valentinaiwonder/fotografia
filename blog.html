@@ -183,12 +183,12 @@
         <script>
             document.querySelectorAll('.responder').forEach(function(botao) {
                 botao.addEventListener('click', function() {
-                    var card = this.parentElement; // Seleciona o elemento pai do botão (a div .card)
+                    var card = this.parentElement // Seleciona o elemento pai do botão (a div .card)
                     var caixa_texto = document.createElement('input')
                     caixa_texto.type = 'text'
                     caixa_texto.placeholder = 'Digite a resposta'
-                    
-                    card.appendChild(caixa_texto); // Adiciona o input no final do comentário
+
+                    card.appendChild(caixa_texto) // Adiciona o input no final do comentário
                 })
             })
         </script>
