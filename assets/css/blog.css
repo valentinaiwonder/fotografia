@@ -5,20 +5,33 @@
     font-style: normal;
   }
   
-  .kaisei-harunoumi-medium {
+.kaisei-harunoumi-medium {
     font-family: "Kaisei HarunoUmi", serif;
     font-weight: 500;
     font-style: normal;
-  }
+}
   
-  .kaisei-harunoumi-bold {
+.kaisei-harunoumi-bold {
     font-family: "Kaisei HarunoUmi", serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-  :root {
+:root {
     --fonte-k: 'Kaisei HarunoUmi', serif;
+}
+
+:root {
+    --cor-fundo-branco: #ffffff;
+    --cor-fundo-preto:black;
+    --cor-fundo-transparente: rgba(0, 0, 0, 0);
+    --cor-texto-preto: #000000;
+    --cor-texto-branco: #ffffff;
+    --espaco-item-menu: 45px;
+    --largura-wrapper: 95%;
+    --cor-hover: #7d95b0;
+    --altura-linha: 2px;
+    --cor-h1-hover: rgba(255, 255, 255, 0.738); 
 }
 /* FIM da fonte padrão */
 
@@ -29,6 +42,76 @@
     box-sizing: border-box;
 }
 
+/* Cabeçalho */
+.header1 {
+    background-color: var(--cor-fundo-preto);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.header1 .wrapper {
+    width: var(--largura-wrapper);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 .logo a {
+    color: var(--cor-texto-branco);
+    text-decoration: none;
+    font-size: 36px;
+    transition: color 0.3s;
+}
+
+.header1 .logo a:hover {
+    color: var(--cor-h1-hover);
+}
+
+.header1 .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header1 .menu ul li {
+    margin-left: var(--espaco-item-menu);
+}
+
+
+.header1 .menu ul li a {
+    color: var(--cor-texto-branco);
+    font-size: 19px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header1 .menu ul li a:hover {
+    color: var(--cor-hover);
+    transform: scale(1.05);
+}
+
+.header1 .menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--altura-linha);
+    background-color: var(--cor-texto-branco);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header1 .menu ul li a:hover::before {
+    transform: scaleX(1);
+}
+/* Fim do cabeçalho */
+
 body {
     font-family: var(--fonte-k);
     margin: 0;
@@ -36,29 +119,22 @@ body {
     background-color: #f0f0f0;
     color: #333;
   }
+
   header {
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 1em;
   }
-  nav {
-    background-color: #333;
-    padding: 0.5em;
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  nav ul li {
-    margin: 0 1em;
-  }
 
-  nav ul li a {
+  .titulo {
+    background-color: #3b3c3d;
+    padding: 1.1em;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
     color: #fff;
+    font-size:x-small;
     text-decoration: none;
   }
 
@@ -80,6 +156,65 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
+
+
+
+/* PUBLICAÇÕES */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .gallery-item:hover .overlay {
+    height: 100%;
+  }
+  
+  .overlay-content {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+/* FIM DAS PUBLICAÇÕES */
+
+
 
 /* Aba de comentários */
 .comentarios {
@@ -107,7 +242,7 @@ body {
     margin-bottom: 10px;
 }
 
-.user-icon {
+.usuario-icone {
     font-size: 30px;
     margin-right: 10px;
 }
@@ -124,7 +259,7 @@ body {
 }
 
 .txt_avaliacao {
-    font-style: italic;
     margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* Fim da aba de comentários */
