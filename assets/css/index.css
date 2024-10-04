@@ -1,68 +1,180 @@
+:root {
+    --cor-fundo-branco: #ffffff;
+    --cor-fundo-transparente: rgba(0, 0, 0, 0);
+    --cor-texto-preto: #000000;
+    --cor-texto-branco: #ffffff;
+    --espaco-item-menu: 45px;
+    --largura-wrapper: 95%;
+    --cor-hover: #ccc;
+    --altura-linha: 2px;
+    --cor-h1-hover: rgba(255, 255, 255, 0.738); 
+}
+
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaisei-harunoumi-medium {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kaisei-harunoumi-bold {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/assets/img/p&b19.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header1 {
-    background-color: #ffffff;
+    background-color: var(--cor-fundo-branco);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
 }
 
 .header1 .wrapper {
-    width: 80%;
+    width: var(--largura-wrapper);
     margin: 0 auto;
-    padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header1 h1.nuances {
-    color: #000000;
-    margin: 0;
+.header1 .logo a {
+    color: var(--cor-texto-preto);
+    text-decoration: none;
+    font-size: 36px;
+    transition: color 0.3s;
 }
 
-.header1 .menu ul li a {
-    color: #000000; 
+.header1 .logo a:hover {
+    color: var(--cor-h1-hover);
 }
 
-
-.header2 {
-    background-color: #000000; 
-}
-
-.header2 .wrapper {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header2 h1.nuances {
-    color: #ffffff; 
-    margin: 0;
-}
-
-.header2 .menu ul li a {
-    color: #ffffff; 
-}
-
-
-.menu ul {
+.header1 .menu ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-.menu ul li {
-    margin-left: 20px;
+.header1 .menu ul li {
+    margin-left: var(--espaco-item-menu);
 }
 
-.menu ul li a {
+
+.header1 .menu ul li a {
+    color: var(--cor-texto-preto);
+    font-size: 19px;
     text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-    padding: 0 20px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header1 .menu ul li a:hover {
+    color: var(--cor-hover);
+    transform: scale(1.05);
+}
+
+.header1 .menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--altura-linha);
+    background-color: var(--cor-texto-preto);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header1 .menu ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.header2 {
+    background-color: var(--cor-fundo-transparente);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.header2 .wrapper {
+    width: var(--largura-wrapper);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2 .logo a {
+    color: var(--cor-texto-branco);
+    text-decoration: none;
+    font-size: 36px;
+    transition: color 0.3s;
+}
+
+.header2 .logo a:hover {
+    color: var(--cor-h1-hover);
+}
+
+.header2 .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header2 .menu ul li {
+    margin-left: var(--espaco-item-menu);
+}
+
+
+.header2 .menu ul li a {
+    color: var(--cor-texto-branco);
+    font-size: 19px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header2 .menu ul li a:hover {
+    color: var(--cor-hover);
+    transform: scale(1.05);
+}
+
+.header2 .menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--altura-linha);
+    background-color: var(--cor-texto-branco);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header2 .menu ul li a:hover::before {
+    transform: scaleX(1);
 }
