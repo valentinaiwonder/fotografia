@@ -219,8 +219,7 @@ body {
 /* Aba de comentários */
 .comentarios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     max-width: 1200px;
     padding: 20px;
 }
@@ -233,7 +232,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .user-info {
@@ -247,12 +246,12 @@ body {
     margin-right: 10px;
 }
 
-.name {
+.nome {
     font-size: 18px;
     font-weight: bold;
 }
 
-.stars {
+.estrelas {
     margin-left: auto;
     font-size: 16px;
     color: #ffd700;
