@@ -1,38 +1,110 @@
-*{
+* {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     transition: all 0.3s;
+    font-family: var(--fonteum);
 }
+
 :root {
     --fonteum: "Kaisei HarunoUmi", serif;
 }
-.titulo {
-    font-family: var(--fonteum);
+.catalogo {
+    color:black;
+    font-size: 40px;
+    margin: 30px auto;
+    margin-left: 60px;
+}
+
+.foto {
+    transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.foto:hover {
+    filter: brightness(0.3);
+    opacity: 0.8;
 }
 .galeria {
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 10px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 10px;
     width: 90%;
     max-width: 1200px;
-    margin-top: 50px;
+    margin: 50px auto;
 }
+
 .galeria img {
     width: 100%;
     height: auto;
     display: block;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
-.galeria img.visible {
-    opacity: 1;
+
+/* Estilo da Header */
+.header1, .header2 {
+    background-color: black; 
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
 }
-.galeria img {
-    grid-row-end: span 1;
+
+.header1 .wrapper, .header2 .wrapper {
+    width: 90%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.galeria img.lazy {
-    grid-row-end: span calc(var(--row-span) + 1);
-    object-fit: cover;
+
+.titulo{
+    color: white; /* Texto branco */
+    text-decoration: none;
+    font-size: 36px;
+    transition: color 0.3s;
+}
+
+.header1 .logo a:hover, .header2 .logo a:hover {
+    color: grey; 
+}
+
+.header1 .menu ul, .header2 .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header1 .menu ul li, .header2 .menu ul li {
+    margin-left: 30px; /* Espaçamento entre os itens */
+}
+
+.header1 .menu ul li a, .header2 .menu ul li a {
+    color: white; /* Links brancos */
+    font-size: 19px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header1 .menu ul li a:hover, .header2 .menu ul li a:hover {
+    color: grey; /* Efeito hover para links */
+    transform: scale(1.05);
+}
+
+/* Sublinha o item ao passar o mouse */
+.header1 .menu ul li a::before, .header2 .menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header1 .menu ul li a:hover::before, .header2 .menu ul li a:hover::before {
+    transform: scaleX(1);
 }

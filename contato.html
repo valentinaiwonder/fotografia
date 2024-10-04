@@ -11,27 +11,25 @@
 </head>
 <body>
     <header class="header2">
-        <div class="header">
-            <div class="wrapper">
-                <div class="logo">
-                    <h1 class = "nuances">NUANCES</h1>
-                </div>
-            <div class="container">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="" class="nuances kaisei-harunoumi-bold">NUANCES</a>
             </div>
+            <nav class="menu">
+                <ul class="kaisei-harunoumi-regular">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div class="bet">
+    <div class="bet">   
         <div class="dados">
             <h1 class="fonte ">Contato</h1>
             <p class="fonte telefone ">Telefone e Whatsapp: (11) 98765-4321</p>
+        <b>__________________________</b>    
             <div class="fonte">
                 <h2>Nossa Localização</h2>
                 <div class="localizacao">
@@ -44,23 +42,26 @@
         </div>
         <div class="formulario">
             <form class="fonte">
-                <div class="info">
-                        <label>Nome:</label>
-                        <input class="info2" type="text" id="nome" name="nome" required>
-                        <label>Email:</label>
-                        <input class="info2" type="email" id="email" name="email" required>
-                        <br>
-                        <label>Telefone:</label>
-                        <input class="info2" class="info2" type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-                        <label>Assunto:</label>
-                        <input class="info2" type="text" id="assunto" name="assunto" required>
+                <div class="info dpBlock">
+                    <div>
+                        <label class="nome ">Nome:</label>
+                        <input class="info2 " type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                        <label class="email ">Email:ﾠﾠ</label>
+                        <input class="info2 " type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div>
+                        <label class="tel ">Telefone:</label>
+                        <input class="info2 " class="info2" type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        <label class="assunto ">Assunto:</label>
+                        <input class="info2 " type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                    </div>
                 </div>    
                 <div>
-                    <label>Mensagem:</label>
+                    <label class="mensagem">Mensagem:</label>
                     <br>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <textarea class="msgBox" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button class="enviar" type="submit">Enviar</button>
             </form>
         </div>
     </div>
