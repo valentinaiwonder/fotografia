@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+:root {
+    --fonteum: "Kaisei HarunoUmi", serif;
+}
+.titulo {
+    font-family: var(--fonteum);
+}
+.galeria {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 10px; 
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.galeria img.visible {
+    opacity: 1;
+}
+.galeria img {
+    grid-row-end: span 1;
+}
+.galeria img.lazy {
+    grid-row-end: span calc(var(--row-span) + 1);
+    object-fit: cover;
+}
