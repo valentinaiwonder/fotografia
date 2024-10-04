@@ -12,52 +12,115 @@
 
 </head>
 <body>
-    <header>
-        <h1>NUANCES</h1>
-        <p>Blog</p>
-      </header>
+    <header class="header1">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="" class="nuances kaisei-harunoumi-bold">NUANCES</a>
+            </div>
+            <nav class="menu">
+                <ul class="kaisei-harunoumi-regular">
+                    <li><a href="">INÍCIO</a></li>
+                    <li><a href="">SOBRE</a></li>
+                    <li><a href="">GALERIA</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
       
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/gallery">Galeria</a></li>
-          <li><a href="/learn">Contato</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
+      <div class="titulo">
+        <h1>ACOMPANHE O MEU TRABALHO</h1>
+      </div>
       
       <main>
-        <div class="fractal-animation">
-          <svg width="100%" height="100%" viewBox="0 0 800 300">
-            <rect x="0" y="0" width="800" height="300" fill="#000"/>
-            <g id="mandelbrot">
-              <!-- Simplified Mandelbrot set representation -->
-              <path d="M400 150 Q 450 50, 500 150 T 600 150 Q 550 250, 500 150 T 400 150" fill="#0066cc" />
-              <path d="M400 150 Q 350 250, 300 150 T 200 150 Q 250 50, 300 150 T 400 150" fill="#00cc66" />
-            </g>
-          </svg>
-        </div>
         
         <article class="blog-post">
           <h2>SOBRE ESTE BLOG</h2>
           <br>
-          <p>Olá, Sou Jean Pierre Polnareff! fotógrafo profissional e criador deste blog.</p>
+          <p>ﾠﾠﾠﾠﾠﾠOlá, Sou Jean Pierre Polnareff! fotógrafo profissional e criador deste blog.</p>
           <p>Aqui, compartilho um pouco do meu dia a dia e os bastidores dos meus trabalhos.</p>
           <p>Você poderá acompanhar meus projetos, sejam ensaios artísticos ou eventos especiais, sempre com um olhar criativo e detalhista.</p>
           <p>Adoro documentar o processo de criação, desde a preparação até o resultado final.</p>
           <br>
-          <p>Além das minhas postagens, também criei um espaço dedicado a você, meu cliente!</p>
+          <p>ﾠﾠﾠﾠﾠﾠAlém das minhas postagens, também criei um espaço dedicado a você, meu cliente!</p>
           <p>Na aba de avaliações, você pode deixar sua opinião sobre os serviços que fizemos juntos.</p>
           <p>Suas experiências são extremamente importantes para mim, e valorizo cada comentário que me ajuda a crescer ainda mais como profissional.</p>
           <br>
-          <p>Fique à vontade para explorar, comentar e deixar seu feedback!</p>
+          <p>> Fique à vontade para explorar, comentar e deixar seu feedback!</p>
         </article>
 
+        <div class="container">
+
+            <section class="gallery">
+              <div class="gallery-item">
+                <img src="assets/img/casamento_ft.jpg" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Casamento</h3>
+                    <p>Um estudo sobre luz e sombra em retratos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/img/paisagem_ft.webp" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Majestade Natural</h3>
+                    <p>Capturando a beleza das montanhas ao entardecer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/img/praia_ft.jpg" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Praia</h3>
+                    <p>Foto de mim capturando um momento incrível na praia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/img/piramide_ft.jpg" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Viagem ao Egito</h3>
+                    <p>A energia e aura que as pirâmides trazem são únicas, 
+                        essa foto foi caprturada em minha viagem à Cairo no Egito</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/img/everest_ft.webp" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Monte Everest</h3>
+                    <p>Trabalho que realizei no Monte Everest, localizado na Cordilheira do Himalaia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/img/alaska_ft.jpg" alt="" width="300" height="400">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h3>Alasca</h3>
+                    <p>Capturando momentos preciosos no Alasca - Estados Unidos</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+        <!-- Comentários dos usuários -->
+         <h2>Avaliações sobre o meu trabalho</h2>
         <div class="comentarios">
 
             <div class="card">
                 <div class="user-info">
-                    <span class="user-icon">👤</span>
+                    <span class="usuario-icone">👤</span>
                     <p class="name">Ana Paula</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
@@ -66,7 +129,7 @@
 
             <div class="card">
                 <div class="user-info">
-                    <span class="user-icon">👤</span>
+                    <span class="usuario-icone">👤</span>
                     <p class="name">Carlos Eduardo</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
@@ -75,7 +138,7 @@
 
             <div class="card">
                 <div class="user-info">
-                    <span class="user-icon">👤</span>
+                    <span class="usuario-icone">👤</span>
                     <p class="name">Juliana Mota</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
@@ -84,7 +147,7 @@
 
             <div class="card">
                 <div class="user-info">
-                    <span class="user-icon">👤</span>
+                    <span class="usuario-icone">👤</span>
                     <p class="name">Renato Alves</p>
                     <div class="stars">⭐⭐⭐⭐</div>
                 </div>
@@ -93,11 +156,20 @@
 
             <div class="card">
                 <div class="user-info">
-                    <span class="user-icon">👤</span>
+                    <span class="usuario-icone">👤</span>
                     <p class="name">Maria Clara</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
                 <p class="txt_avaliacao">As fotos do meu ensaio de gestante ficaram maravilhosas! O fotógrafo foi extremamente atencioso e o resultado foi emocionante.</p>
+            </div>
+
+            <div class="card">
+                <div class="user-info">
+                    <span class="usuario-icone">👤</span>
+                    <p class="name">Marcos Alberto</p>
+                    <div class="stars">⭐⭐⭐</div>
+                </div>
+                <p class="txt_avaliacao"><Em>Eu gostei do serviço prestado e as fotos ficaram boas, porém achei o preço muito elevado para a quantidade de fotos por sessão</Em>.</p>
             </div>
         </div>
 
