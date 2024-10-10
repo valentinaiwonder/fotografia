@@ -68,7 +68,7 @@
 }
 
 .header1 .logo a:hover, .header2 .logo a:hover {
-    color: grey; 
+    color: #ccc;
 }
 
 .header1 .menu ul, .header2 .menu ul {
@@ -91,7 +91,7 @@
 }
 
 .header1 .menu ul li a:hover, .header2 .menu ul li a:hover {
-    color: grey; /* Efeito hover para links */
+    color: #ccc; /* Efeito hover para links */
     transform: scale(1.05);
 }
 
