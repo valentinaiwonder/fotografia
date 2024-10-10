@@ -33,46 +33,45 @@
     --altura-linha: 2px;
     --cor-h1-hover: rgba(255, 255, 255, 0.738); 
 }
-.header1 {
-    background-color: var(--cor-fundo-branco);
+.header1, .header2 {
+    background-color: black; 
     position: relative;
     width: 100%;
     z-index: 1;
     padding: 20px 0;
 }
 
-.header1 .wrapper {
-    width: var(--largura-wrapper);
+.header1 .wrapper, .header2 .wrapper {
+    width: var(--largura-wrapper); 
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header1 .logo a {
-    color: var(--cor-texto-preto);
+.titulo{
+    color: white; /* Texto branco */
     text-decoration: none;
     font-size: 36px;
     transition: color 0.3s;
 }
 
-.header1 .logo a:hover {
-    color: var(--cor-h1-hover);
+.header1 .logo a:hover, .header2 .logo a:hover {
+    color: grey; 
 }
 
-.header1 .menu ul {
+.header1 .menu ul, .header2 .menu ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-.header1 .menu ul li {
-    margin-left: var(--espaco-item-menu);
+.header1 .menu ul li, .header2 .menu ul li {
+    margin-left: 30px; /* Espaçamento entre os itens */
 }
 
-
-.header1 .menu ul li a {
-    color: var(--cor-texto-preto);
+.header1 .menu ul li a, .header2 .menu ul li a {
+    color: white; /* Links brancos */
     font-size: 19px;
     text-decoration: none;
     position: relative;
@@ -80,92 +79,25 @@
     transition: color 0.3s, transform 0.3s;
 }
 
-.header1 .menu ul li a:hover {
-    color: var(--cor-hover);
+.header1 .menu ul li a:hover, .header2 .menu ul li a:hover {
+    color: grey; /* Efeito hover para links */
     transform: scale(1.05);
 }
 
-.header1 .menu ul li a::before {
+/* Sublinha o item ao passar o mouse */
+.header1 .menu ul li a::before, .header2 .menu ul li a::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: var(--altura-linha);
-    background-color: var(--cor-texto-preto);
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-.header1 .menu ul li a:hover::before {
-    transform: scaleX(1);
-}
-
-.header2 {
-    background-color: var(--cor-texto-preto);
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    padding: 20px 0;
-}
-
-.header2 .wrapper {
-    width: var(--largura-wrapper);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header2 .logo a {
-    color: var(--cor-texto-branco);
-    text-decoration: none;
-    font-size: 36px;
-    transition: color 0.3s;
-}
-
-.header2 .logo a:hover {
-    color: var(--cor-h1-hover);
-}
-
-.header2 .menu ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.header2 .menu ul li {
-    margin-left: var(--espaco-item-menu);
-}
-
-
-.header2 .menu ul li a {
-    color: var(--cor-texto-branco);
-    font-size: 19px;
-    text-decoration: none;
-    position: relative;
-    padding: 5px 0;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.header2 .menu ul li a:hover {
-    color: var(--cor-hover);
-    transform: scale(1.05);
-}
-
-.header2 .menu ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: var(--altura-linha);
-    background-color: var(--cor-texto-branco);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.header2 .menu ul li a:hover::before {
+.header1 .menu ul li a:hover::before, .header2 .menu ul li a:hover::before {
     transform: scaleX(1);
 }
 
