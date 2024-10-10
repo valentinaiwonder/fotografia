@@ -11,7 +11,8 @@
 .catalogo {
     color:black;
     font-size: 40px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 70px;
 }
 
 .foto {
@@ -110,19 +111,10 @@
 .header1 .menu ul li a:hover::before, .header2 .menu ul li a:hover::before {
     transform: scaleX(1);
 }
-.fimm {
+footer {
     background-color: black;
 }
-
-.fim {
-        font-size: 30;
-        color:white;
-        text-align: center;
-        padding: 10px 0;
-        padding-top:30px;
-        padding-bottom:0;
-}
-.wrapper {
+.apps {
     display: inline-flex;
     list-style: none;
     height: 120px;
@@ -131,7 +123,7 @@
     padding-left: 530px;
   }
   
-  .wrapper .icon {
+  .apps .icon {
     position: relative;
     background: #fff;
     border-radius: 50%;
@@ -148,7 +140,7 @@
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  .wrapper .tooltip {
+  .apps .tooltip {
     position: absolute;
     top: 0;
     font-size: 14px;
@@ -162,7 +154,7 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  .wrapper .tooltip::before {
+  .apps .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -174,15 +166,15 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  .wrapper .icon:hover .tooltip {
+  .apps .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
   
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
+  .apps .icon:hover span,
+  .apps .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
   }
 

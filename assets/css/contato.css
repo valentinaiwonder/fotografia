@@ -23,7 +23,7 @@
   }
 :root{
     --fonte-p: 'Kaisei HarunoUmi', serif;
-        --cor-fundo-branco: #ffffff;
+    --cor-fundo-branco: #ffffff;
     --cor-fundo-transparente: rgba(0, 0, 0, 0);
     --cor-texto-preto: #000000;
     --cor-texto-branco: #ffffff;
@@ -282,6 +282,8 @@ h3{
 
 #msg {
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .mensagem {
