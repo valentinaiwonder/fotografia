@@ -38,7 +38,7 @@
     position: relative;
     width: 100%;
     z-index: 1;
-    padding: 20px 0;
+    padding: ;
 }
 
 .header1 .wrapper, .header2 .wrapper {
@@ -57,7 +57,7 @@
 }
 
 .header1 .logo a:hover, .header2 .logo a:hover {
-    color: grey; 
+    color: #ccc;
 }
 
 .header1 .menu ul, .header2 .menu ul {
@@ -67,12 +67,12 @@
 }
 
 .header1 .menu ul li, .header2 .menu ul li {
-    margin-left: 30px; /* Espaçamento entre os itens */
+    margin-left: 45px; /* Espaçamento entre os itens */
 }
 
 .header1 .menu ul li a, .header2 .menu ul li a {
     color: white; /* Links brancos */
-    font-size: 19px;
+    font-size: 21px;
     text-decoration: none;
     position: relative;
     padding: 5px 0;
@@ -80,7 +80,7 @@
 }
 
 .header1 .menu ul li a:hover, .header2 .menu ul li a:hover {
-    color: grey; /* Efeito hover para links */
+    color: #ccc; /* Efeito hover para links */
     transform: scale(1.05);
 }
 
@@ -100,6 +100,29 @@
 .header1 .menu ul li a:hover::before, .header2 .menu ul li a:hover::before {
     transform: scaleX(1);
 }
+/* header{
+    background-color: #333;
+    color: #fff; 
+    padding: 400;
+
+}
+header h1 {
+    font-size: 1.5em; 
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px; 
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em; 
+} */
+
+
 
 h1{
     font-size: 33px;
@@ -228,7 +251,7 @@ h3{
 }
 footer {
     background-color: black;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     color: white;
     margin-top: 20px;
