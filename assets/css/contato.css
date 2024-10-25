@@ -42,7 +42,7 @@
 }
 
 .header1 .wrapper, .header2 .wrapper {
-    width: 95%; 
+    width: 100%; 
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -64,6 +64,7 @@
     display: flex;
     list-style: none;
     padding: 0;
+    margin-right: 20px;
 }
 
 .header1 .menu ul li, .header2 .menu ul li {
@@ -306,4 +307,7 @@ footer .icon:hover .tooltip {
 
 footer .icon svg:hover {
     fill: #ccc; 
+}
+div, .wrapper{
+    margin: 0;
 }
