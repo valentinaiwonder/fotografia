@@ -271,8 +271,8 @@ footer {
   list-style: none;
   height: 120px;
   width: 100%;
-  padding-top: 10px;
-  padding-left: 530px;
+  align-items: center;
+  justify-content: center;
 }
 
 .apps .icon {
