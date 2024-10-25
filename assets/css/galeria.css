@@ -17,17 +17,17 @@
 
 .foto {
     transition: filter 0.5s ease, opacity 0.5s ease;
-    
 }
 
 .foto:hover {
     filter: brightness(0.3);
     opacity: 0.8;
 }
+
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 10px;
+    gap: 10px; /* Remove espaço entre as imagens */
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
@@ -39,7 +39,11 @@
     display: block;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
+    object-fit: cover; /* Assegura que as imagens preencham o espaço corretamente */
 }
+
 .logo {
     padding-left: 0;
 }

@@ -120,6 +120,29 @@
           </li>
         </ul>
     </footer>
+    <script>
+      window.onload = function() {
+        ajustarGaleria();
+      };
+    
+      window.onresize = function() {
+        ajustarGaleria();
+      };
+    
+      function ajustarGaleria() {
+        const galeria = document.querySelector('.galeria');
+        const imagens = document.querySelectorAll('.galeria img');
+    
+        // Calcula a largura de uma imagem baseada na galeria
+        const larguraImagem = galeria.offsetWidth / Math.floor(galeria.offsetWidth / 350);
+    
+        // Ajusta a altura de cada imagem
+        imagens.forEach(img => {
+          img.style.height = `${larguraImagem * 0.75}px`; // ajusta a altura para 75% da largura (razão 4:3, você pode ajustar isso)
+        });
+      }
+    </script>
+    
 </body>
 
 </html>
