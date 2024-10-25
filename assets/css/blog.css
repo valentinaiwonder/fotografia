@@ -264,7 +264,7 @@ body {
 
 .responder {
   margin-top: 15px;
-  background-color: #4CAF50;
+  background-color: #434647;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -275,7 +275,7 @@ body {
 }
 
 .responder:hover {
-  background-color: #45a049;
+  background-color: #434647;
   transform: scale(1.05);
 }
 
@@ -299,7 +299,7 @@ body {
 }
 
 .responder {
-  background-color: #4CAF50;
+  background-color: #434647;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -310,7 +310,7 @@ body {
 }
 
 .responder:hover {
-  background-color: #45a049;
+  background-color: #434647;
   transform: scale(1.05);
 }
 
