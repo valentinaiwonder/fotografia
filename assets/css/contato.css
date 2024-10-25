@@ -312,3 +312,120 @@ footer .icon svg:hover {
 div, .wrapper{
     margin: 0;
 }
+/* Estilo padrão para desktop */
+.header1 {
+    padding: 20px 0;
+}
+
+.header1 .menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header1 .menu ul li a {
+    font-size: 19px;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .header1 {
+        padding: 15px 0;
+    }
+
+    .header1 .menu ul {
+        flex-direction: column; /* Menu empilhado para melhor visualização */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .bet {
+        flex-direction: column; /* Colocar os elementos em coluna */
+        align-items: center;
+        margin: 20px;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .dados {
+        width: 90%;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .localizacao {
+        text-align: center;
+    }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+    .header1 {
+        padding: 10px 0;
+    }
+
+    .titulo {
+        font-size: 28px; /* Reduz o tamanho do título */
+    }
+
+    .header1 .menu ul {
+        gap: 5px;
+    }
+
+    .header1 .menu ul li a {
+        font-size: 16px; /* Reduz o tamanho da fonte no menu */
+    }
+
+    .bet {
+        flex-direction: column; /* Elementos empilhados */
+        gap: 20px;
+        margin: 0;
+    }
+
+    .formulario {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .dados {
+        width: 95%;
+    }
+
+    .info {
+        padding: 20px;
+    }
+
+    .msgBox {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .enviar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .localizacao {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    footer .apps {
+        flex-direction: column; /* Ícones empilhados */
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .apps .icon {
+        margin: 5px;
+    }
+}
+.wrapper {
+    width: 100%;
+    max-width: 1200px; /* Define um limite de largura para desktops */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
