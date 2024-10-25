@@ -261,6 +261,62 @@ body {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.responder {
+  margin-top: 15px;
+  background-color: #434647;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.responder:hover {
+  background-color: #434647;
+  transform: scale(1.05);
+}
+
+.responder:focus {
+  outline: none;
+}
+
+.resposta-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.resposta-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.responder {
+  background-color: #434647;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.responder:hover {
+  background-color: #434647;
+  transform: scale(1.05);
+}
+
+.responder:focus {
+  outline: none;
+}
 /* Fim da aba de comentários */
 
 footer {
